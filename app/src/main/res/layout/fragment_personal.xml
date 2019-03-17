@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Personal"
+    android:orientation="vertical"
+    android:background="#3b3b3b">
+
+    <ImageButton
+        android:id="@+id/IBdp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/personal_details"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/ETpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETpemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/email_id"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETpmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/mobile"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETplocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/location"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETplinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/links"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/add_skill"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETpskills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_skills"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/BTNpersave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/save"/>
+
+</LinearLayout>

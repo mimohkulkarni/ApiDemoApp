@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Education"
+    android:orientation="vertical"
+    android:background="#3b3b3b">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_school_black_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/education_details"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/ETuni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/university"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETstream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/stream"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/city"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/SPedstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="35dp"
+        android:entries="@array/year"/>
+
+    <Spinner
+        android:id="@+id/SPedend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="35dp"
+        android:entries="@array/year"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_certificate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+    <ImageButton
+        android:id="@+id/IMcertificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_add_black_24dp"/>
+
+    <Button
+        android:id="@+id/BTNedusave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/save"/>
+
+</LinearLayout>

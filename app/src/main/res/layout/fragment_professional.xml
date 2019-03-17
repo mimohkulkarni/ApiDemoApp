@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Personal"
+    android:orientation="vertical"
+    android:background="#3b3b3b">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sharp_business_center_black_24dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/professional_details"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/ETorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/organization"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ETdesg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/designation"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/CBwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/currently_work_here"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/SPstartmonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            android:prompt="@array/month"
+            android:entries="@array/month"/>
+
+        <Spinner
+            android:id="@+id/SPstartyear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            android:prompt="@array/year"
+            android:entries="@array/year"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/SPendmonth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            android:prompt="@array/month"
+            android:entries="@array/month"/>
+
+        <Spinner
+            android:id="@+id/SPendyear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:spinnerMode="dialog"
+            android:prompt="@array/year"
+            android:entries="@array/year"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:weightSum="10">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_add_black_24dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTNprosave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/save"/>
+
+</LinearLayout>
